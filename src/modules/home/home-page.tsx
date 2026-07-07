@@ -7,13 +7,12 @@ const HomePage: React.FC = () => {
     <div className="min-h-screen relative overflow-hidden bg-[#f4f7f6] text-slate-800 font-sans selection:bg-blue-200">
       {/* Background Pastel Meshes & Network Lines */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute -top-[10%] -left-[10%] w-[60%] h-[60%] bg-pink-200/40 blur-[120px] rounded-full mix-blend-multiply"></div>
-        <div className="absolute top-[20%] -right-[10%] w-[50%] h-[50%] bg-blue-200/40 blur-[120px] rounded-full mix-blend-multiply"></div>
-        <div className="absolute -bottom-[20%] left-[20%] w-[50%] h-[50%] bg-purple-200/40 blur-[120px] rounded-full mix-blend-multiply"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-pink-200/40 blur-[120px] rounded-full mix-blend-multiply"></div>
+        <div className="absolute top-[20%] right-[-10%] w-[50%] h-[50%] bg-blue-200/40 blur-[120px] rounded-full mix-blend-multiply"></div>
+        <div className="absolute bottom-[-20%] left-[20%] w-[50%] h-[50%] bg-purple-200/40 blur-[120px] rounded-full mix-blend-multiply"></div>
       </div>
 
-      {/* Top Navigation Bar */}
-      <nav className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pt-6 flex justify-end items-center gap-4">
+      <nav className="relative z-10 max-w-350 mx-auto px-6 md:px-12 pt-6 flex justify-end items-center gap-4">
         <div className="w-10 h-10 rounded-full bg-slate-500/20 flex items-center justify-center backdrop-blur-md border border-white/40 shadow-sm cursor-pointer hover:bg-slate-500/30 transition">
           <span className="text-sm font-semibold text-slate-700">JD</span>
         </div>
@@ -36,7 +35,7 @@ const HomePage: React.FC = () => {
       </nav>
 
       {/* Header Section */}
-      <header className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pt-12 pb-16 flex flex-col md:flex-row justify-between items-start md:items-center">
+      <header className="relative z-10 max-w-350 mx-auto px-6 md:px-12 pt-12 pb-16 flex flex-col md:flex-row justify-between items-start md:items-center">
         <div>
           <h1 className="text-5xl md:text-6xl font-extrabold text-slate-700 tracking-tight">
             Project Modules Workspace
@@ -66,11 +65,11 @@ const HomePage: React.FC = () => {
           <Link
             key={mod.id}
             to={mod.path}
-            className="group block bg-white/40 backdrop-blur-2xl border border-white/60 rounded-[32px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1"
+            className="group block bg-white/40 backdrop-blur-2xl border border-white/60 rounded-4xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1"
           >
             {/* Top Graphic Area */}
             <div
-              className={`relative h-64 w-full bg-gradient-to-br ${mod.gradient} overflow-hidden`}
+              className={`relative h-64 w-full bg-linear-to-br ${mod.gradient} overflow-hidden`}
             >
               <mod.Graphic />
               {/* Icon Badge */}
@@ -82,7 +81,7 @@ const HomePage: React.FC = () => {
             </div>
 
             {/* Bottom Content Area */}
-            <div className="p-8 bg-gradient-to-b from-white/60 to-white/90 h-full">
+            <div className="p-8 bg-linear-to-b from-white/60 to-white/90 h-full">
               <h2 className="text-xl font-bold tracking-widest text-slate-800 mb-3 uppercase">
                 {mod.name}
               </h2>
@@ -99,7 +98,7 @@ const HomePage: React.FC = () => {
       </main>
 
       {/* Footer Navigation */}
-      <footer className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pb-10 flex justify-end gap-6 text-sm font-semibold text-slate-500">
+      <footer className="relative z-10 max-w-350 mx-auto px-6 md:px-12 pb-10 flex justify-end gap-6 text-sm font-semibold text-slate-500">
         <a href="#" className="hover:text-slate-800 transition-colors">
           Home
         </a>

@@ -9,7 +9,6 @@ export const modules = [
     iconBg: "bg-blue-400",
     Graphic: () => (
       <div className="absolute inset-0 flex items-center justify-center">
-        {/* Abstract Search Graphic */}
         <div className="relative w-48 h-12 bg-white/80 backdrop-blur-md rounded-full shadow-lg border border-white/50 flex items-center px-4 z-10 transform -rotate-6">
           <svg
             className="w-5 h-5 text-blue-400 mr-2"
@@ -48,9 +47,8 @@ export const modules = [
     iconBg: "bg-purple-500",
     Graphic: () => (
       <div className="absolute inset-0 flex flex-col items-center justify-end pb-8">
-        {/* Abstract Tree Graphic */}
         <div className="relative w-full h-32 flex justify-center">
-          <div className="w-1 h-full bg-gradient-to-t from-purple-400 to-transparent"></div>
+          <div className="w-1 h-full bg-linear-to-t from-purple-400 to-transparent"></div>
           <div className="absolute top-10 w-24 h-16 border-t-[3px] border-l-[3px] border-r-[3px] border-purple-300/50 rounded-t-3xl"></div>
           <div className="absolute top-4 w-48 h-20 border-t-[3px] border-l-[3px] border-r-[3px] border-emerald-300/40 rounded-t-[40px]"></div>
           {/* Nodes */}
@@ -58,6 +56,48 @@ export const modules = [
           <div className="absolute top-8 right-[35%] w-2 h-2 rounded-full bg-white shadow-sm shadow-purple-500"></div>
           <div className="absolute top-2 left-[20%] w-2 h-2 rounded-full bg-white shadow-sm shadow-emerald-500"></div>
           <div className="absolute top-2 right-[20%] w-2 h-2 rounded-full bg-white shadow-sm shadow-emerald-500"></div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: "virtualization",
+    name: "Virtualization",
+    path: "/virtualization",
+    desc: "Virtualization for Efficient Data Rendering",
+    buttonText: "Explore Virtualization →",
+    gradient: "from-orange-200 via-rose-100 to-red-50",
+    iconBg: "bg-orange-400",
+    Graphic: () => (
+      <div className="absolute inset-0 flex items-center justify-center">
+        {/* Abstract Form Graphic */}
+        <div className="relative w-40 h-48 bg-white/70 backdrop-blur-md rounded-xl shadow-lg border border-white/50 p-4 transform rotate-6">
+          <div className="w-1/2 h-3 bg-orange-200 rounded-full mb-4"></div>
+          <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
+          <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
+          <div className="w-3/4 h-6 bg-white rounded-md mb-4 shadow-sm border border-slate-100"></div>
+          <div className="w-full h-8 bg-linear-to-r from-orange-400 to-rose-400 rounded-md mt-auto"></div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: "pagination",
+    name: "Pagination",
+    path: "/pagination",
+    desc: "Pagination for Horizontal data list",
+    buttonText: "Explore Pagination →",
+    gradient: "from-orange-200 via-rose-100 to-red-50",
+    iconBg: "bg-orange-400",
+    Graphic: () => (
+      <div className="absolute inset-0 flex items-center justify-center">
+        {/* Abstract Form Graphic */}
+        <div className="relative w-40 h-48 bg-white/70 backdrop-blur-md rounded-xl shadow-lg border border-white/50 p-4 transform rotate-6">
+          <div className="w-1/2 h-3 bg-orange-200 rounded-full mb-4"></div>
+          <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
+          <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
+          <div className="w-3/4 h-6 bg-white rounded-md mb-4 shadow-sm border border-slate-100"></div>
+          <div className="w-full h-8 bg-linear-to-r from-orange-400 to-rose-400 rounded-md mt-auto"></div>
         </div>
       </div>
     ),
@@ -78,7 +118,7 @@ export const modules = [
           <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
           <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
           <div className="w-3/4 h-6 bg-white rounded-md mb-4 shadow-sm border border-slate-100"></div>
-          <div className="w-full h-8 bg-gradient-to-r from-orange-400 to-rose-400 rounded-md mt-auto"></div>
+          <div className="w-full h-8 bg-linear-to-r from-orange-400 to-rose-400 rounded-md mt-auto"></div>
         </div>
       </div>
     ),
