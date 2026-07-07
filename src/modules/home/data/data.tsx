@@ -103,6 +103,27 @@ export const modules = [
     ),
   },
   {
+    id: "otp",
+    name: "otp",
+    path: "/otp",
+    desc: "OTP Input box...",
+    buttonText: "Explore Otp Component →",
+    gradient: "from-orange-200 via-rose-100 to-red-50",
+    iconBg: "bg-orange-400",
+    Graphic: () => (
+      <div className="absolute inset-0 flex items-center justify-center">
+        {/* Abstract Form Graphic */}
+        <div className="relative w-40 h-48 bg-white/70 backdrop-blur-md rounded-xl shadow-lg border border-white/50 p-4 transform rotate-6">
+          <div className="w-1/2 h-3 bg-orange-200 rounded-full mb-4"></div>
+          <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
+          <div className="w-full h-6 bg-white rounded-md mb-2 shadow-sm border border-slate-100"></div>
+          <div className="w-3/4 h-6 bg-white rounded-md mb-4 shadow-sm border border-slate-100"></div>
+          <div className="w-full h-8 bg-linear-to-r from-orange-400 to-rose-400 rounded-md mt-auto"></div>
+        </div>
+      </div>
+    ),
+  },
+  {
     id: "dynamic-form",
     name: "DYNAMIC FORM",
     path: "/dynamic-form",

@@ -5,6 +5,7 @@ import TypeAheadPage from "../modules/type-ahead/page/type-ahead-page";
 import RecursivePage from "../modules/recursive/page/recursive-page";
 import VirtualizationPage from "../modules/virtualization/page/virtualization-page";
 import PaginationPage from "../modules/pagination/pages/pagination-page";
+import OtpInputPage from "../modules/otp-input/pages/otp-input-page";
 
 const router = createBrowserRouter([
   { path: "/", Component: HomePage },
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   { path: "/virtualization", Component: VirtualizationPage },
   { path: "/recursive", Component: RecursivePage },
   { path: "/pagination", Component: PaginationPage },
+  { path: "/otp", Component: OtpInputPage },
 ]);
 
 const MainRoutes = () => {
