@@ -6,6 +6,7 @@ import RecursivePage from "../modules/recursive/page/recursive-page";
 import VirtualizationPage from "../modules/virtualization/page/virtualization-page";
 import PaginationPage from "../modules/pagination/pages/pagination-page";
 import OtpInputPage from "../modules/otp-input/pages/otp-input-page";
+import DynamicFormPage from "../modules/dynamic-form/pages/dynamic-form-page";
 
 const router = createBrowserRouter([
   { path: "/", Component: HomePage },
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   { path: "/recursive", Component: RecursivePage },
   { path: "/pagination", Component: PaginationPage },
   { path: "/otp", Component: OtpInputPage },
+  { path: "/dynamic-form", Component: DynamicFormPage },
 ]);
 
 const MainRoutes = () => {
