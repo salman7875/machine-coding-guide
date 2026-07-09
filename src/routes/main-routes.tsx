@@ -7,6 +7,7 @@ import VirtualizationPage from "../modules/virtualization/page/virtualization-pa
 import PaginationPage from "../modules/pagination/pages/pagination-page";
 import OtpInputPage from "../modules/otp-input/pages/otp-input-page";
 import DynamicFormPage from "../modules/dynamic-form/pages/dynamic-form-page";
+import AccordianPage from "../modules/accordian/page/accordian-page";
 
 const router = createBrowserRouter([
   { path: "/", Component: HomePage },
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/pagination", Component: PaginationPage },
   { path: "/otp", Component: OtpInputPage },
   { path: "/dynamic-form", Component: DynamicFormPage },
+  { path: "/accordian", Component: AccordianPage },
 ]);
 
 const MainRoutes = () => {
