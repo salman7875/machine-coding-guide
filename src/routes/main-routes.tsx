@@ -8,6 +8,7 @@ import PaginationPage from "../modules/pagination/pages/pagination-page";
 import OtpInputPage from "../modules/otp-input/pages/otp-input-page";
 import DynamicFormPage from "../modules/dynamic-form/pages/dynamic-form-page";
 import AccordianPage from "../modules/accordian/page/accordian-page";
+import KanbanBoardPage from "../modules/kanban-board/pages/kanban-board-page";
 
 const router = createBrowserRouter([
   { path: "/", Component: HomePage },
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   { path: "/otp", Component: OtpInputPage },
   { path: "/dynamic-form", Component: DynamicFormPage },
   { path: "/accordian", Component: AccordianPage },
+  { path: "/kanban-board", Component: KanbanBoardPage },
 ]);
 
 const MainRoutes = () => {
